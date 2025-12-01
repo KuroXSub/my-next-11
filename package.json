@@ -3,15 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && next dev",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && next build",
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider && next start",
+    "lint": "set NODE_OPTIONS=--openssl-legacy-provider && next lint"
   },
   "dependencies": {
-    "next": "15.5.6",
-    "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "next": "^11.1.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "eslint": "9.39.1",
